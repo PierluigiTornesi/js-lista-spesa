@@ -5,7 +5,7 @@ console.log(listaElem);
 let listaProd = "";
 
 //array contennete la lista della spesa
-const arraySpesa = ["pomodori","lette","biscotti","pollo","acqua"]
+const arraySpesa = ["pomodori","latte","biscotti","pollo","acqua"]
 //variabile per la lunghezza dell'array
 let lunghezza = arraySpesa.length;
 //indice per spostarmi dentro l'array
@@ -22,8 +22,8 @@ while(lunghezza > 0){
     i++;
     //decremento la lunghezza
     lunghezza--;
-    //scrivo nella lista il div contenente il prodotto
-    listaProd += `<div><p>Il prodotto alla posizione numero ${i} della lista é "${prodotto}"</p></div>`
+    //scrivo nella lista il prodotto corrente
+    listaProd += `<li><p>Il prodotto alla posizione numero ${i} della lista é "${prodotto}"</p></li>`
 }
 //aggiungo all'html tutta la lista dei prodotti
 listaElem.innerHTML = listaProd;
